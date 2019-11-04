@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+			<title>Quản lý đơn hàng</title>
+			<% include ../QLkhachhang/elements_1/header_1 %>
+    </head>
+    <body id="page-top">
+			<% include ../QLkhachhang/elements_1/navbar_1  %>
+        <div id="wrapper">
+            <!-- Sidebar -->
+           <% include elements_3/sidebar_3  %>
+            <div class="container">
+				<h2 class="h1"> Quản lý đơn hàng </h2>
+				<br />
+				<div class="row">
+					<div class="col-md-4">
+						<h5 class="h4"> Danh sách đơn hàng  </h5>
+					</div>
+					<div class="col-md-8">
+						<form>
+							<div class="form-group row">
+								<label for="inputMadh" class="col-form-label"><b>Mã ĐH</b></label>
+								<div class="col-sm-3">
+									<input type="madh" class="form-control" id="inputMadh" placeholder="Mã đơn hàng">
+								</div>
+								<div class="form-check col-form-label">
+								<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label " for="gridRadios1">
+									<b>Tìm kiếm</b> &nbsp;
+									</label>
+								</div>
+								<div class="form-check col-form-label">
+								<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label " for="gridRadios1">
+									<b>Xóa</b>
+									</label>
+								</div>
+								<div class="col-sm-5">
+									<button type="submit" class="btn btn-primary">Thực thi</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<table border="3" class="h5">
+						<tr align="center" bgcolor="#99CCFF">
+							<th> Mã ĐH  </th>
+							<th> Ngày lập đơn   </th>
+							<th> Mã SP  </th>
+							<th> Số lượng  </th>
+							<th> Tổng tiền  </th>
+							<th> Mã người nhận  </th>
+							<th> Trạng thái  </th>
+						</tr>
+						<tr >
+							<th> D001 </th>
+							<th> 01/11/2019   </th>
+							<th> S002  </th>
+							<th> 3  </th>
+							<th> 30.000.000đ  </th>
+							<th> K003  </th>
+							<th> Đang giao  </th>
+						</tr>
+						<tr >
+							<th> D002 </th>
+							<th> 02/11/2019   </th>
+							<th> S003  </th>
+							<th> 2  </th>
+							<th> 40.000.000đ  </th>
+							<th> K001  </th>
+							<th> Đang giao  </th>
+						</tr>
+						<tr >
+							<th> D003 </th>
+							<th> 12/10/2019   </th>
+							<th> S001  </th>
+							<th> 2  </th>
+							<th> 45.000.000đ  </th>
+							<th> K004  </th>
+							<th> Đã giao  </th>
+						</tr>
+						<tr >
+							<th> D004 </th>
+							<th> 01/10/2019   </th>
+							<th> S005  </th>
+							<th> 1 </th>
+							<th> 20.000.000đ  </th>
+							<th> K006  </th>
+							<th> Đã giao  </th>
+						</tr>
+						<tr >
+							<th> D005 </th>
+							<th> 05/11/2019   </th>
+							<th> S004  </th>
+							<th> 2  </th>
+							<th> 30.000.000đ  </th>
+							<th> K005  </th>
+							<th> Chưa giao  </th>
+						</tr>
+			
+					</table>
+				</div>
+			</div>
+			<br />
+			<br />
+		 <!-- Sticky Footer -->
+		 <%  include ../elements/footer  %>
+      <!-- Bootstrap core JavaScript-->
+	  <% include ../QLkhachhang/elements_1/script_1 %>
+    </body>
+</html>

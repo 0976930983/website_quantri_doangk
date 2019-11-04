@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+			<title>Thống kê doanh thu</title>
+			<% include ../QLkhachhang/elements_1/header_1 %>
+    </head>
+    <body id="page-top">
+			<% include ../QLkhachhang/elements_1/navbar_1  %>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <% include elements_3/sidebar_3  %>
+            <div class="container">
+				<h2 class="h1"> Thống kê doanh thu</h2>
+				<br />
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="h4"> Doanh thu theo ngày:  </h5>
+					</div>
+					<div class="col-md-9">
+						<form>
+							<div class="form-group row">
+								<label for="inputDay" class="col-form-label"><b>Ngày: </b></label>
+								<div class="col-sm-3">
+									<input type="day" class="form-control" id="inputDay" placeholder="dd/mm/yyyy">
+								</div>
+								<div class="col-sm-5">
+									<button type="submit" class="btn btn-primary">Thống kê</button>
+								</div>
+								<div class="col-sm-4">
+								<label for="inputDay" class="col-form-label"><b>Doanh thu: </b></label>
+								
+									<output type="doanhthu" class="form-control" id="outputDT"></output>(VNĐ)
+								</div>
+							</div>
+						</form>
+					</div>
+					 <div class="col-sm-12">
+						<div style='border-bottom:1px solid #ccc;'></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="h4"> Doanh thu theo tuần:  </h5>
+					</div>
+					<div class="col-md-9">
+						<form>
+							<div class="form-group row">
+								<label for="inputfromDay" class="col-form-label"><b>Từ ngày: </b></label>
+								<div class="col-sm-3">
+									<input type="fromday" class="form-control" id="inputfromDay" placeholder="dd/mm/yyyy">
+								</div>
+								<label for="inputtoDay" class="col-form-label"><b>đến ngày: </b></label>
+								<div class="col-sm-3">
+									<input type="today" class="form-control" id="inputtoDay" placeholder="dd/mm/yyyy">
+								</div>
+								<div class="col-sm-5">
+									<button type="submit" class="btn btn-primary">Thống kê</button>
+								</div>
+								<div class="col-sm-4">
+								<label for="inputDay" class="col-form-label"><b>Doanh thu: </b></label>
+								
+									<output type="doanhthu" class="form-control" id="outputDT"></output>(VNĐ)
+								</div>
+							</div>
+						</form>
+					</div>
+					 <div class="col-sm-12">
+						<div style='border-bottom:1px solid #ccc;'></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="h4"> Doanh thu theo tháng:  </h5>
+					</div>
+					<div class="col-md-9">
+						<form class="form-inline">
+							<label class="my-1 mr-2" for="inlineFormCustomSelectPref"><b>Tháng:</b></label>
+								<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">								
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+							<label class="my-1 mr-2" for="inlineFormCustomSelectPref"><b>Năm:</b></label>
+								<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">								
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>								
+								</select>
+							<button type="submit" class="btn btn-primary my-1">Thống kê</button>
+						</form>
+						<div class="col-sm-4">
+								<label for="inputDay" class="col-form-label"><b>Doanh thu: </b></label>								
+								<output type="doanhthu" class="form-control" id="outputDT"></output>(VNĐ)
+						</div>
+					</div>
+					 <div class="col-sm-12">
+						<div style='border-bottom:1px solid #ccc;'></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="h4"> Doanh thu theo quý:  </h5>
+					</div>
+					<div class="col-md-9">
+						<form class="form-inline">
+							<label class="my-1 mr-2" for="inlineFormCustomSelectPref"><b>Quý:</b></label>
+								<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">								
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							<label class="my-1 mr-2" for="inlineFormCustomSelectPref"><b>Năm:</b></label>
+								<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">								
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>								
+								</select>
+							<button type="submit" class="btn btn-primary my-1">Thống kê</button>
+						</form>
+						<div class="col-sm-4">
+								<label for="inputDay" class="col-form-label"><b>Doanh thu: </b></label>								
+								<output type="doanhthu" class="form-control" id="outputDT"></output>(VNĐ)
+						</div>
+					</div>
+					 <div class="col-sm-12">
+						<div style='border-bottom:1px solid #ccc;'></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="h4"> Doanh thu theo năm:  </h5>
+					</div>
+					<div class="col-md-9">
+						<form class="form-inline">
+							<label class="my-1 mr-2" for="inlineFormCustomSelectPref"><b>Năm:</b></label>
+								<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">								
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>								
+								</select>
+							<button type="submit" class="btn btn-primary my-1">Thống kê</button>
+						</form>
+						<div class="col-sm-4">
+								<label for="inputDay" class="col-form-label"><b>Doanh thu: </b></label>								
+								<output type="doanhthu" class="form-control" id="outputDT"></output>(VNĐ)
+						</div>
+					</div>
+					 <div class="col-sm-12">
+						<div style='border-bottom:1px solid #ccc;'></div>
+					</div>
+				</div>
+				
+			</div>
+			<br />
+			<br />
+		 <!-- Sticky Footer -->
+                
+      <!-- Bootstrap core JavaScript-->
+	  <% include ../QLkhachhang/elements_1/script_1 %>
+    </body>
+</html>

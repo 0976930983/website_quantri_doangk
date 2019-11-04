@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+			<title>Quản lý sản phẩm trên gian hàng</title>
+			<% include ../QLkhachhang/elements_1/header_1 %>
+    </head>
+    <body id="page-top">
+			<% include ../QLkhachhang/elements_1/navbar_1  %>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <% include elements_2/sidebar_2   %>
+            <div class="container">
+				<h2 class="h1"> Quản lý sản phẩm trên gian hàng </h2>
+				<br />
+				<div class="row">
+					<div class="col-md-6">
+						<form class="form-inline">
+							<label class="my-1 mr-2" for="inlineFormCustomSelectPref"><b>Mã gian hàng</b></label>
+								<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+									<option selected>G001</option>
+									<option value="1">G001</option>
+									<option value="2">G002</option>
+									<option value="3">G003</option>
+									<option value="4">G004</option>
+									<option value="5">G005</option>
+								</select>
+							<button type="submit" class="btn btn-primary my-1">Tìm kiếm</button>
+						</form>
+						<br />
+						<h5 class="h4"> Danh sách sản phẩm  </h5>
+						<br />
+						<table border="3" class="h5">
+							<tr align="center" bgcolor="#99CCFF">
+								<th> Mã SP  </th>
+								<th> Tên   </th>
+								<th> Số lượng  </th>
+								<th> Giá   </th>
+								<th> Thông số   </th>
+							</tr>
+							<tr >
+								<th> S001  </th>
+								<th> Dell Inspiron 3567   </th>
+								<th> 30  </th>
+								<th> 19.500.000đ   </th>
+								<th> <a href="../chitietsp/dell3567"> Xem chi tiết   </a>  </th>
+							</tr>
+							<tr >
+								<th> S002  </th>
+								<th> Dell Vostro 3480   </th>
+								<th> 35  </th>
+								<th> 13.990.000đ  </th>
+								<th> <a href="../chitietsp/dell3480"> Xem chi tiết   </a>  </th>
+							</tr>
+							<tr >
+								<th> S003  </th>
+								<th> Dell 13.3" XPS 13 9380   </th>
+								<th> 15  </th>
+								<th> 29.990.000đ   </th>
+								<th> <a href="../chitietsp/dell9380"> Xem chi tiết   </a>  </th>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-6">
+						<form>
+								<div class="form-group row">
+									<label for="inputMaSP" class="col-form-label"><b>Mã SP</b></label>
+									<div class="col-sm-3">
+										<input type="masp" class="form-control" id="inputMaSP" placeholder="Mã SP">
+									</div>
+									<div class="form-check col-form-label">
+										<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+										<label class="form-check-label " for="gridRadios1">
+											<b>Tìm kiếm</b> &nbsp;
+										</label>
+									</div>
+									<div class="form-check col-form-label">
+										<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+										<label class="form-check-label " for="gridRadios1">
+										<b>Xóa</b>
+										</label>
+									</div>
+									<div class="col-sm-5">
+										<button type="submit" class="btn btn-primary">Thực thi</button>
+									</div>
+								</div>
+							</form>								
+							<h6 class="h4"> Thông tin sản phẩm  </h6>
+							<br />
+							<div class="form-group row">
+							<label for="inputSanpham" class="col-sm-2 col-form-label"><b>Mã SP</b></label>
+								<div class="col-sm-6">
+									<input type="sanpham" class="form-control" id="inputSanpham" placeholder="Mã sản phẩm">
+								</div>
+							</div>
+							<div class="form-group row">
+							<label for="inputTenSP" class="col-sm-2 col-form-label"><b>Tên </b></label>
+								<div class="col-sm-6">
+									<input type="tensp" class="form-control" id="inputTenSP" placeholder="Tên sản phẩm">
+								</div>
+							</div>
+							<div class="form-group row">
+							<label for="inputSLSP" class="col-sm-2 col-form-label"><b>Số lượng</b></label>
+								<div class="col-sm-6">
+									<input type="soluongSP" class="form-control" id="inputSLSP" placeholder="Số lượng sản phẩm">
+								</div>
+							</div>
+							<div class="form-group row">
+							<label for="inputGia" class="col-sm-2 col-form-label"><b>Giá</b></label>
+								<div class="col-sm-6">
+									<input type="gia" class="form-control" id="inputGia" placeholder="Giá sản phẩm">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="form-check col-form-label">
+									<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label " for="gridRadios1">
+										<b>Thêm</b> &nbsp;
+									</label>
+								</div>
+								<div class="form-check col-form-label">
+									<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label " for="gridRadios1">
+									<b>Cập nhật</b>
+									</label>
+								</div>
+								<div class="col-sm-5">
+									<button type="submit" class="btn btn-primary">Thực thi</button>
+								</div>
+							</div>					
+					</div>
+				</div>
+			</div>
+			<br />
+			<br />
+		 <!-- Sticky Footer -->
+		 <%  include ../elements/footer  %>
+      <!-- Bootstrap core JavaScript-->
+	  <% include ../QLkhachhang/elements_1/script_1 %>
+    
+    </body>
+</html>

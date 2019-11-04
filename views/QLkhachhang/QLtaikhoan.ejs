@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+			<title>Quản lý tài khoản khách hàng</title>
+        <% include elements_1/header_1 %>
+    </head>
+    <body id="page-top">
+			<% include elements_1/navbar_1 %>
+        <div id="wrapper">
+            <!-- Sidebar -->
+			<% include elements_1/sidebar_1 %>
+            <div class="container">
+				<h2 class="h1"> Quản lý tài khoản khách hàng </h2>
+				<br />
+				<div class="row">
+					<div class="col-md-5">
+						<h5 class="h4"> Danh sách tài khoản khách hàng  </h5>
+					</div>
+					<div class="col-md-7">
+						<form>
+							<div class="form-group row">
+								<label for="inputMakh" class="col-form-label"><b>Mã KH</b></label>
+								<div class="col-sm-3">
+									<input type="makh" class="form-control" id="inputMakh" placeholder="Mã khách hàng">
+								</div>
+								<div class="form-check col-form-label">
+								<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label " for="gridRadios1">
+									<b>Tìm kiếm</b> &nbsp;
+									</label>
+								</div>
+								<div class="form-check col-form-label">
+								<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label " for="gridRadios1">
+									<b>Xóa</b>
+									</label>
+								</div>
+								<div class="col-sm-5">
+									<button type="submit" class="btn btn-primary">Thực thi</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<table border="3" class="h5">
+						<tr align="center" bgcolor="#99CCFF">
+							<th> Mã KH  </th>
+							<th> Họ và tên  </th>
+							<th> Email  </th>
+							<th> Số điện thoại  </th>
+							<th> Địa chỉ  </th>
+							<th> Số lần giao dịch  </th>
+						</tr>
+						<tr >
+							<th> 001 </th>
+							<th> Nguyễn Văn Lợi  </th>
+							<th> nguyenvanloi@gmail.com  </th>
+							<th> 0976930980  </th>
+							<th> Lạng Sơn  </th>
+							<th> 4  </th>
+						</tr>
+						<tr >
+							<th> 002 </th>
+							<th> Nguyễn Đức Hoàng  </th>
+							<th> nguyenduchoang@gmail.com  </th>
+							<th> 0976930981  </th>
+							<th> Nghệ An  </th>
+							<th> 3  </th>
+						</tr>
+						<tr >
+							<th> 003 </th>
+							<th> Trần Thị Hiền  </th>
+							<th> tranthihien@gmail.com  </th>
+							<th> 0976930983  </th>
+							<th> ThanhHoa  </th>
+							<th> 5  </th>
+						</tr>
+						<tr >
+							<th> 004 </th>
+							<th> Đào Văn Hoàng  </th>
+							<th> daovanhoang@gmail.com  </th>
+							<th> 0976930984  </th>
+							<th> Đồng Nai  </th>
+							<th> 2  </th>
+						</tr>
+						<tr >
+							<th> 005 </th>
+							<th> Trương Minh Hiếu  </th>
+							<th> truongminhhieu@gmail.com  </th>
+							<th> 0976930985  </th>
+							<th> Đồng Tháp  </th>
+							<th> 1  </th>
+						</tr>
+						<tr >
+							<th> 006 </th>
+							<th> Võ Thị Ngọc Duyên  </th>
+							<th> vothingocduyen@gmail.com  </th>
+							<th> 0976930986  </th>
+							<th> Đồng Nai </th>
+							<th> 4  </th>
+						</tr>
+						<tr >
+							<th> 007 </th>
+							<th> Lê Hận Thương Hoài  </th>
+							<th> lehanthuonghoai@gmail.com  </th>
+							<th> 0976930987  </th>
+							<th> Bình Thuận  </th>
+							<th> 1 </th>
+						</tr>
+						<tr >
+							<th> 008 </th>
+							<th> Nguyễn Thị Giang  </th>
+							<th> nguyenthigiang@gmail.com  </th>
+							<th> 0976930988  </th>
+							<th> Nghệ An  </th>
+							<th> 2  </th>
+						</tr>
+						<tr >
+							<th> 009 </th>
+							<th> Trần Thúy Hậu  </th>
+							<th> tranthuyhau@gmail.com  </th>
+							<th> 0976930989  </th>
+							<th> Nghệ An  </th>
+							<th> 4  </th>
+						</tr>
+						<tr >
+							<th> 010 </th>
+							<th> Nguyễn Đức Hiếu  </th>
+							<th> nguyenduchieu@gmail.com  </th>
+							<th> 0976930973  </th>
+							<th> Nghệ An </th>
+							<th> 10  </th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<br />
+			<br />
+		 <!-- Sticky Footer -->
+                <%  include ../elements/footer  %>
+      <!-- Bootstrap core JavaScript-->
+       <%  include   elements_1/script_1  %>
+    </body>
+</html>

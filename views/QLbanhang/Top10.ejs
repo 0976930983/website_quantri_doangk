@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+			<title>Thống kê số lượng bán top 10</title>
+			<% include ../QLkhachhang/elements_1/header_1 %>
+    </head>
+    <body id="page-top">
+			<% include ../QLkhachhang/elements_1/navbar_1  %>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <% include elements_3/sidebar_3  %>
+            <div class="container">
+				<h2 class="h1"> Thống kê số lượng bán top 10</h2>
+				<br />
+				<h5 class="h4"> Top 10 sản phẩm bán chạy nhất website:  </h5>
+				<br />
+				<div class="row">
+					<table border="3" class="h5">
+						<tr align="center" bgcolor="#99CCFF">
+							<th> STT  </th>
+							<th> Mã SP  </th>
+							<th> Tên sản phẩm  </th>
+							<th> Số lượng bán được  </th>
+							<th> Đánh giá(100)  </th>
+						</tr>
+						<tr>
+							<th> 1  </th>
+							<th> S004   </th>
+							<th> LAPTOP DELL INSPIRON CORE I5 5480-X6C892  </th>
+							<th> 15  </th>
+							<th> 80/100  </th>
+						</tr>
+						<tr>
+							<th> 2  </th>
+							<th> S005   </th>
+							<th> Laptop Dell Vostro 3478 Core I5-8250U  </th>
+							<th> 14  </th>
+							<th> 79/100  </th>
+						</tr>
+						<tr>
+							<th> 3  </th>
+							<th> S006   </th>
+							<th> LAPTOP DELL VOSTRO 3578-NGMPF21  </th>
+							<th> 13  </th>
+							<th> 78/100  </th>
+						</tr>
+						<tr>
+							<th> 4  </th>
+							<th> S007   </th>
+							<th> Laptop Dell Vostro 15-3578 Core i5-8250U  </th>
+							<th> 12  </th>
+							<th> 77/100  </th>
+						</tr>
+						<tr>
+							<th> 5  </th>
+							<th> S008   </th>
+							<th> Laptop Dell Vostro 3478 Core I5-8250U  </th>
+							<th> 11  </th>
+							<th> 76/100  </th>
+						</tr>
+						<tr>
+							<th> 6  </th>
+							<th> S009   </th>
+							<th> Laptop Dell Inspiron N3576 core i5-8250U  </th>
+							<th> 10  </th>
+							<th> 75/100  </th>
+						</tr>
+						<tr>
+							<th> 7  </th>
+							<th> S010   </th>
+							<th> Laptop Dell Vostro 3478 Core I5-8250U  </th>
+							<th> 9  </th>
+							<th> 74/100  </th>
+						</tr>
+						<tr>
+							<th> 8  </th>
+							<th> S011   </th>
+							<th> Laptop Dell Inspiron 3476 Core i5-8250U   </th>
+							<th> 7  </th>
+							<th> 73/100  </th>
+						</tr>
+						<tr>
+							<th> 9  </th>
+							<th> S012   </th>
+							<th> Laptop Dell Inspiron 5370 Core i5-8250U   </th>
+							<th> 6  </th>
+							<th> 72/100  </th>
+						</tr>
+						<tr>
+							<th> 10  </th>
+							<th> S013   </th>
+							<th> Laptop Dell Vostro 3578-V3578A Core i5-8250U  </th>
+							<th> 4  </th>
+							<th> 70/100  </th>
+						</tr>
+			
+					</table>
+					<div class="col-sm-12">
+						<div style='border-bottom:1px solid #ccc;'></div>
+					</div>
+				</div>
+				<br />
+				<h5 class="h4"> Top 10 sản phẩm bán chạy nhất gian hàng:  </h5>
+				<br />
+				<div class="row">
+					<form class="form-inline">
+						<label class="my-1 mr-2" for="inlineFormCustomSelectPref"><b>Mã gian hàng</b></label>
+							<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+								
+								<option value="1">G001</option>
+								<option value="2">G002</option>
+								<option value="3">G003</option>
+								<option value="4">G004</option>
+								<option value="5">G005</option>
+							</select>
+						<button type="submit" class="btn btn-primary my-1">Tìm kiếm</button>
+					</form>
+				</div>
+				<br />
+				<div class="row">
+					<table border="3" class="h5">
+						<tr align="center" bgcolor="#99CCFF">
+							<th> STT  </th>
+							<th> Mã SP  </th>
+							<th> Mã GH  </th>
+							<th> Tên sản phẩm  </th>
+							<th> Số lượng bán được  </th>
+							<th> Đánh giá(100)  </th>
+						</tr>
+						<tr>
+							<th> 1  </th>
+							<th> S004   </th>
+							<th> G001 </th>
+							<th> LAPTOP DELL INSPIRON CORE I5 5480-X6C892  </th>
+							<th> 15  </th>
+							<th> 80/100  </th>
+						</tr>
+						<tr>
+							<th> 2  </th>
+							<th> S005   </th>
+							<th> G001 </th>
+							<th> Laptop Dell Vostro 3478 Core I5-8250U  </th>
+							<th> 14  </th>
+							<th> 79/100  </th>
+						</tr>
+						<tr>
+							<th> 3  </th>
+							<th> S006   </th>
+							<th> G001 </th>
+							<th> LAPTOP DELL VOSTRO 3578-NGMPF21  </th>
+							<th> 13  </th>
+							<th> 78/100  </th>
+						</tr>
+						<tr>
+							<th> 4  </th>
+							<th> S007   </th>
+							<th> G001 </th>
+							<th> Laptop Dell Vostro 15-3578 Core i5-8250U  </th>
+							<th> 12  </th>
+							<th> 77/100  </th>
+						</tr>
+						<tr>
+							<th> 5  </th>
+							<th> S008   </th>
+							<th> G001 </th>
+							<th> Laptop Dell Vostro 3478 Core I5-8250U  </th>
+							<th> 11  </th>
+							<th> 76/100  </th>
+						</tr>
+						<tr>
+							<th> 6  </th>
+							<th> S009   </th>
+							<th> G001 </th>
+							<th> Laptop Dell Inspiron N3576 core i5-8250U  </th>
+							<th> 10  </th>
+							<th> 75/100  </th>
+						</tr>
+						<tr>
+							<th> 7  </th>
+							<th> S010   </th>
+							<th> G001 </th>
+							<th> Laptop Dell Vostro 3478 Core I5-8250U  </th>
+							<th> 9  </th>
+							<th> 74/100  </th>
+						</tr>
+						<tr>
+							<th> 8  </th>
+							<th> S011   </th>
+							<th> G001 </th>
+							<th> Laptop Dell Inspiron 3476 Core i5-8250U   </th>
+							<th> 7  </th>
+							<th> 73/100  </th>
+						</tr>
+						<tr>
+							<th> 9  </th>
+							<th> S012   </th>
+							<th> G001 </th>
+							<th> Laptop Dell Inspiron 5370 Core i5-8250U   </th>
+							<th> 6  </th>
+							<th> 72/100  </th>
+						</tr>
+						<tr>
+							<th> 10  </th>
+							<th> S013   </th>
+							<th> G001 </th>
+							<th> Laptop Dell Vostro 3578-V3578A Core i5-8250U  </th>
+							<th> 4  </th>
+							<th> 70/100  </th>
+						</tr>
+			
+					</table>
+					<div class="col-sm-12">
+						<div style='border-bottom:1px solid #ccc;'></div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<br />
+		 <!-- Sticky Footer -->
+               
+      <!-- Bootstrap core JavaScript-->
+	  <% include ../QLkhachhang/elements_1/script_1 %>
+    </body>
+</html>

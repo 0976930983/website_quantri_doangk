@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+			<title>Quản lý hệ thống gian hàng</title>
+        <% include ../QLkhachhang/elements_1/header_1 %>
+    </head>
+    <body id="page-top">
+        <% include ../QLkhachhang/elements_1/navbar_1  %>
+        <div id="wrapper">
+            <!-- Sidebar -->
+           <% include elements_2/sidebar_2   %>
+            <div class="container">
+				<h2 class="h1"> Quản lý hệ thống gian hàng </h2>
+				<br />
+				<div class="row">
+					<div class="col-md-5">
+						<h5 class="h4"> Danh sách gian hàng  </h5>
+						<br />
+						<table border="3" class="h5">
+							<tr align="center" bgcolor="#99CCFF">
+								<th> Mã GH  </th>
+								<th> Tên GH  </th>
+								<th> SL sản phẩm  </th>
+							</tr>
+							<tr >
+								<th> G001  </th>
+								<th> Hãng DELL  </th>
+								<th> 3  </th>
+							</tr>
+							<tr >
+								<th> G002 </th>
+								<th> Hãng HP  </th>
+								<th> 3  </th>
+							</tr>
+							<tr >
+								<th> G003  </th>
+								<th> Hãng MSI  </th>
+								<th> 3 </th>
+							</tr>
+							<tr >
+								<th> G004  </th>
+								<th> Cấu hình cao  </th>
+								<th> 3  </th>
+							</tr>
+							<tr >
+								<th> G005  </th>
+								<th> Cấu hình trung bình  </th>
+								<th> 3  </th>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-7">						
+							<form>
+								<div class="form-group row">
+									<label for="inputMaGH" class="col-form-label"><b>Mã GH</b></label>
+									<div class="col-sm-3">
+										<input type="magh" class="form-control" id="inputMagh" placeholder="Mã gian hàng">
+									</div>
+									<div class="form-check col-form-label">
+										<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+										<label class="form-check-label " for="gridRadios1">
+											<b>Tìm kiếm</b> &nbsp;
+										</label>
+									</div>
+									<div class="form-check col-form-label">
+										<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+										<label class="form-check-label " for="gridRadios1">
+										<b>Xóa</b>
+										</label>
+									</div>
+									<div class="col-sm-5">
+										<button type="submit" class="btn btn-primary">Thực thi</button>
+									</div>
+								</div>
+							</form>								
+							<h6 class="h4"> Thông tin gian hàng  </h6>
+							<br />
+							<div class="form-group row">
+							<label for="inputGianhang" class="col-sm-2 col-form-label"><b>Mã GH</b></label>
+								<div class="col-sm-6">
+									<input type="Gianhang" class="form-control" id="inputGianhang" placeholder="Mã gian hàng">
+								</div>
+							</div>
+							<div class="form-group row">
+							<label for="inputTenGH" class="col-sm-2 col-form-label"><b>Tên GH</b></label>
+								<div class="col-sm-6">
+									<input type="tengianhang" class="form-control" id="inputTenGH" placeholder="Tên gian hàng">
+								</div>
+							</div>
+							<div class="form-group row">
+							<label for="inputSLSP" class="col-sm-2 col-form-label"><b>SL SP</b></label>
+								<div class="col-sm-6">
+									<input type="soluongSP" class="form-control" id="inputSLSP" placeholder="Số lượng sản phẩm">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="form-check col-form-label">
+									<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label " for="gridRadios1">
+										<b>Thêm</b> &nbsp;
+									</label>
+								</div>
+								<div class="form-check col-form-label">
+									<input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label " for="gridRadios1">
+									<b>Cập nhật</b>
+									</label>
+								</div>
+								<div class="col-sm-5">
+									<button type="submit" class="btn btn-primary">Thực thi</button>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<br />
+		 <!-- Sticky Footer -->
+		 <%  include ../elements/footer  %>
+      <!-- Bootstrap core JavaScript-->
+	  <% include ../QLkhachhang/elements_1/script_1 %>
+    </body>
+</html>
